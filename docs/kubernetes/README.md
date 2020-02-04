@@ -1,1 +1,0 @@
-# Proseguiamo: Kubernetes
