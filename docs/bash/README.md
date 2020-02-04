@@ -1,5 +1,8 @@
 # Navigare nel File System
 
+## Cos'è Bash?
+[Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) sta per **Bourne-Again SHell**, è una [CLI](https://it.wikipedia.org/wiki/Interfaccia_a_riga_di_comando) che è stata creata più di 70 anni fa da **Brian Fox** come sostituto gratuito ed open source della Bourne Shell. Una [shell](https://it.wikipedia.org/wiki/Shell_(informatica)) è uno specifico tipo di CLI. Bash è la shell di default dei sistemi [UNIX](https://it.wikipedia.org/wiki/Unix) (che comprendono linux e macOS).
+
 ## Il tuo primo comando
 
 La linea di comando è un interfaccia testuale al tuo computer. È un programma che riceve comandi, che vengono passati al [OS](https://it.wikipedia.org/wiki/Sistema_operativo).
@@ -9,12 +12,20 @@ Dalla command line, si può navigare tra i files e le cartelle del computer, com
 Il vantaggio che si ha utilizzando il terminale è la sua potenza. Si possono far girare eseguibili e scrivere script per **automatizzare** azioni ripetute spesso, combinando semplici comandi è possibile risolvere problemi complessi.
 
 ### ls
-``` sh
+``` sh{1,3,5,9}
 $ ls # Comando per vedere la lista dei files presenti nella cartella attuale
-> file1 file2 directory1
+# file1 file2 directory1
+$ ls -a # Visualizza anche i files nascosti (che iniziano sempre con un '.', detti dot-files)
+# . .. file1 file2 directory1
+$ ls -t # Visualizza più dettagli, come i diritti di scrittura, la data di creazione, l'autore...
+# drwxr-xr-x  2 handgull handgull 4096 feb  4 12:24 file1
+# drwxr-xr-x  3 handgull handgull 4096 feb  4 11:44 file2
+# drwxr-xr-x  4 handgull handgull 4096 feb  3 14:42 directory1
+$ ls -alt # Si possono combinare tutti i parametri
 ```
 :::tip
 La **shell prompt** appare quando il terminale è pronto a ricevere gli input, può aspetto differente da terminale a terminale, ed è personalizzabile.
+l'opzione `-t` ordina la lista risultante da quello modificato più recentemente.
 :::
 
 ## Filesystem
@@ -53,3 +64,7 @@ Negli esempi sopra è stato passato un **parametro** al comando cd
 $ mkdir <name> # Crea una cartella all'interno della Working directory
 $ touch <name> # Crea un file vuoto nella Working directory
 ```
+
+### Filesystem: esercitazione
+
+[GO!](./exercise-bicycle-world.md)

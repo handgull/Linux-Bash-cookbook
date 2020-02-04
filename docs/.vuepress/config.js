@@ -34,7 +34,8 @@ function getBashSidebar (groupA) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        ''
+        '',
+        './fs-manipulation/'
       ]
     }
   ]
