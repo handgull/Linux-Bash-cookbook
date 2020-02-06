@@ -11,7 +11,7 @@ Dalla command line, si può navigare tra i files e le cartelle del computer, com
 
 Il vantaggio che si ha utilizzando il terminale è la sua potenza. Si possono far girare eseguibili e scrivere script per **automatizzare** azioni ripetute spesso, combinando semplici comandi è possibile risolvere problemi complessi.
 
-### ls
+### $ ls
 ``` sh{1,3,5,9}
 $ ls # Comando per vedere la lista dei files presenti nella cartella attuale
 # file1 file2 directory1
@@ -24,7 +24,8 @@ $ ls -t # Visualizza più dettagli, come i diritti di scrittura, la data di crea
 $ ls -alt # Si possono combinare tutti i parametri
 ```
 :::tip
-La **shell prompt** appare quando il terminale è pronto a ricevere gli input, può aspetto differente da terminale a terminale, ed è personalizzabile.
+La **shell prompt** appare quando il terminale è pronto a ricevere gli input, può cambiare aspetto differente da terminale a terminale, ed è personalizzabile.<br>
+(vedi ~/.bashrc e $PS1 nella sezione linux).<br>
 l'opzione `-t` ordina la lista risultante da quello modificato più recentemente.
 :::
 
@@ -32,13 +33,13 @@ l'opzione `-t` ordina la lista risultante da quello modificato più recentemente
 
 Un filesystem organizza i files e le directories(cartelle) in una **struttura ad albero**:
 
-![git-diagrams-01](./assets/git-diagrams-01.png)
+![bash-diagrams-01](./assets/bash-diagrams-01.png)
 
 1. La prima cartella del FS(filesystem) è la **root directory**, ed è la cartella da cui derivano tutte le cartelle e file del FS.
 
 2. Ogni cartella padre può **contenere** più files/directory. Ad esempio nell'immagine sopra `blog/` è padre di `2014/`, `2015/` e `hardware.txt`
 
-### pwd
+### $ pwd
 ``` sh
 $ pwd # Comando per vedere il path in cui ci si trova, ovvero la cartella ed i suo percorso
 > /home/handgull
@@ -48,7 +49,7 @@ $ pwd # Comando per vedere il path in cui ci si trova, ovvero la cartella ed i s
 :::
 `ls` e `pwd` sono quindi utili comandi del terminale per capire "dove ci si trova"
 
-### cd
+### $ cd
 ``` sh
 $ cd <path> # Comando per spostarsi all'interno della cartella
 $ cd .. # Comando per spostarsi nella cartella padre
@@ -59,7 +60,7 @@ $ cd .. # Comando per spostarsi nella cartella padre
 :::tip
 Negli esempi sopra è stato passato un **parametro** al comando cd
 :::
-### mkdir & touch
+### $ mkdir & $ touch
 ``` sh
 $ mkdir <name> # Crea una cartella all'interno della Working directory
 $ touch <name> # Crea un file vuoto nella Working directory

@@ -35,7 +35,9 @@ function getBashSidebar (groupA) {
       sidebarDepth: 2,
       children: [
         '',
-        './fs-manipulation/'
+        './fs-manipulation/',
+        './redirection/',
+        './env/'
       ]
     }
   ]

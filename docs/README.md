@@ -7,9 +7,12 @@ actionText: Learn now →
 actionLink: ./bash/
 features:
 - title: Linux
-  details: Sistema operativo completamente open source, lascia completa libertà all'utente
+  details: Sistema operativo completamente open source, qui saranno visti solo alcuni accenni, utili ai power users.
 - title: Bash
-  details: Bash è la CLI open source usata dai sistemi Unix.
+  details: Bash è la shell open source usata dai sistemi Unix.
 ---
 Fonti:<br>
 - [Codecademy](https://www.codecademy.com/learn/learn-the-command-line)
+
+Approfondimenti:<br>
+- [UNixmib - bash pt. 1](https://unixmib.github.io/BashSlidesPt1/)

@@ -1,7 +1,7 @@
 {
-  "name": "docker-kubernetes-travisci",
+  "name": "linux-bash",
   "version": "1.0.0",
-  "description": "Appunti su Docker, Kubernetes & Travis CI",
+  "description": "Appunti su Linux e Bash",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
