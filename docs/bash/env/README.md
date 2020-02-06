@@ -22,4 +22,17 @@ Con `su` si può accedere ad altri utenti dentro la sessione bash, **non è la s
 
 ![bash-screenshots-05](../assets/bash-screenshots-05.png)
 ![bash-screenshots-06](../assets/bash-screenshots-06.png)
-WIP
+
+Ora all'inizio di ogni sessione comparirà un messaggio di benvenuto
+
+## Le variabili
+```sh
+# ~/.bash_profile
+export USER="handgull"
+```
+```sh
+echo $USER # Stamperà a video "handgull"
+```
+
+### Bonus: Pixel-art
+Se può interessare ho fatto delle variabili che messe nel `~/.bash_profile` forniscono delle pixel art, clicca [qui](./pixel-art)!
