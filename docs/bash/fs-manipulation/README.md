@@ -2,9 +2,9 @@
 
 ## $ cp e $ mv
 ```sh{4}
-$ cp frida.txt lincoln.txt # copia il file frida.txt in un nuovo file lincoln.txt
-$ cp file1 ... <directory> # copia il file/i files specificati nella directory specificata
-$ cp m*.txt scifi/ # copia tutti i file txt che iniziano per m nella cartella scify
+cp frida.txt lincoln.txt # copia il file frida.txt in un nuovo file lincoln.txt
+cp file1 ... <directory> # copia il file/i files specificati nella directory specificata
+cp m*.txt scifi/ # copia tutti i file txt che iniziano per m nella cartella scify
 # NOTA: vedi wildcards
 ```
 > Ogni esempio visto sopra può essere fatto anche usando `mv`, naturalmente con effetti leggermente diversi:<br>
@@ -17,7 +17,7 @@ Oltre ad usare nomi di files possiamo usare dei caratteri speciali, come `*` per
 ## $ rm
 Per eliminare files e cartelle in maniera __*DEFINITIVA*__
 ```sh{4}
-$ rm file
-$ rm -r directory/ # -r sta per recursive e serve per eliminare la directory ed il suo contenuto, ricorsivamente.
+rm file
+rm -r directory/ # -r sta per recursive e serve per eliminare la directory ed il suo contenuto, ricorsivamente.
 rm directory/* # Elimina ogni file dentro la directory
 ```

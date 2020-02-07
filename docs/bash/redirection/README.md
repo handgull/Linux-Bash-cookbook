@@ -3,8 +3,8 @@ Fino ad ora abbiamo lanciato comandi nella command line ed abbiamo ricevuto uno 
 
 Tramite la redirection possiamo dirigere gli input e gli output di un comando a/da files e programmi; ed anche **connettere più comandi** assieme in una "pipeline".
 ```sh
-$ echo "Hello" # Accetta la stringa "Hello" tramite STDIN e poi la stampa a video tramite STDOUT
-$ cat <file> # stampa a video (sempre tramite STDOUT) il contenuto del file
+echo "Hello" # Accetta la stringa "Hello" tramite STDIN e poi la stampa a video tramite STDOUT
+cat <file> # stampa a video (sempre tramite STDOUT) il contenuto del file
 ```
 
 ## STDIN, STDOUT, ed STDERR
@@ -24,11 +24,11 @@ $ cat <file> # stampa a video (sempre tramite STDOUT) il contenuto del file
 ![bash-screenshots-02](../assets/bash-screenshots-02.png)
 
 ```sh
-$ wc <file> # Word counter, produce sullo standard output un conteggio delle linee, parole e byte che costituiscono uno o più file di testo specificati
-$ sort <file> # Stampa a video il contenuto del file, con le righe ordinate alfabeticamente
-$ uniq <file> # Stampa a video il contenuto del file senza ripetizioni ADIACENTI tra loro (se una riga è identica alla precedente non la stampa)
-$ grep <string> <file> # Stands for “global regular expression print”, stampa ogni riga del file dove è presente la sottostringa specificata
-$ sed 's/<string1>/<string2>/g' <file> # Sostituisce le ricorrenze della prima stringa con la seconda all'interno di un file
+wc <file> # Word counter, produce sullo standard output un conteggio delle linee, parole e byte che costituiscono uno o più file di testo specificati
+sort <file> # Stampa a video il contenuto del file, con le righe ordinate alfabeticamente
+uniq <file> # Stampa a video il contenuto del file senza ripetizioni ADIACENTI tra loro (se una riga è identica alla precedente non la stampa)
+grep <string> <file> # Stands for “global regular expression print”, stampa ogni riga del file dove è presente la sottostringa specificata
+sed 's/<string1>/<string2>/g' <file> # Sostituisce le ricorrenze della prima stringa con la seconda all'interno di un file
 history # Stampa lo storico dei comandi
 ```
 > `grep -i <file>` rende il comando case-insensitive<br>
@@ -46,10 +46,10 @@ Per altri dettagli sulle **regex** del comando `sed`, clicca [qui](https://www.g
 > I comandi sono particolarmente potenti e versatili quando combinati tra loro
 
 ```sh
-$ cat lakes.txt | sort > sorted-lakes.txt # Ordina alfabeticamente i laghi e salva il nuovo ordinamento nel file sorted-lakes.txt
-$ sort deserts.txt | uniq # Stampa a video i nomi dei deserti ordinati alfabeticamente e senza ripetizioni
-$ sort deserts.txt | uniq > uniq-deserts.txt  # Idem ma salva l'output in un file
-$ history | grep <string> # Stampa ogni comando eseguito in passato con la sottostringa specificata
+cat lakes.txt | sort > sorted-lakes.txt # Ordina alfabeticamente i laghi e salva il nuovo ordinamento nel file sorted-lakes.txt
+sort deserts.txt | uniq # Stampa a video i nomi dei deserti ordinati alfabeticamente e senza ripetizioni
+sort deserts.txt | uniq > uniq-deserts.txt  # Idem ma salva l'output in un file
+history | grep <string> # Stampa ogni comando eseguito in passato con la sottostringa specificata
 ```
 
 ![bash-screenshots-04](../assets/bash-screenshots-04.png)

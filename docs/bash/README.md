@@ -13,15 +13,15 @@ Il vantaggio che si ha utilizzando il terminale è la sua potenza. Si possono fa
 
 ### $ ls
 ``` sh{1,3,5,9}
-$ ls # Comando per vedere la lista dei files presenti nella cartella attuale
+ls # Comando per vedere la lista dei files presenti nella cartella attuale
 # file1 file2 directory1
-$ ls -a # Visualizza anche i files nascosti (che iniziano sempre con un '.', detti dot-files)
+ls -a # Visualizza anche i files nascosti (che iniziano sempre con un '.', detti dot-files)
 # . .. file1 file2 directory1
-$ ls -t # Visualizza più dettagli, come i diritti di scrittura, la data di creazione, l'autore...
+ls -t # Visualizza più dettagli, come i diritti di scrittura, la data di creazione, l'autore...
 # drwxr-xr-x  2 handgull handgull 4096 feb  4 12:24 file1
 # drwxr-xr-x  3 handgull handgull 4096 feb  4 11:44 file2
 # drwxr-xr-x  4 handgull handgull 4096 feb  3 14:42 directory1
-$ ls -alt # Si possono combinare tutti i parametri
+ls -alt # Si possono combinare tutti i parametri
 ```
 :::tip
 La **shell prompt** appare quando il terminale è pronto a ricevere gli input, può cambiare aspetto differente da terminale a terminale, ed è personalizzabile.<br>
@@ -41,7 +41,7 @@ Un filesystem organizza i files e le directories(cartelle) in una **struttura ad
 
 ### $ pwd
 ``` sh
-$ pwd # Comando per vedere il path in cui ci si trova, ovvero la cartella ed i suo percorso
+pwd # Comando per vedere il path in cui ci si trova, ovvero la cartella ed i suo percorso
 > /home/handgull
 ```
 :::tip
@@ -51,8 +51,8 @@ $ pwd # Comando per vedere il path in cui ci si trova, ovvero la cartella ed i s
 
 ### $ cd
 ``` sh
-$ cd <path> # Comando per spostarsi all'interno della cartella
-$ cd .. # Comando per spostarsi nella cartella padre
+cd <path> # Comando per spostarsi all'interno della cartella
+cd .. # Comando per spostarsi nella cartella padre
 ```
 :::tip
 **cd** = Change direcory. In altre parole con `cd` possiamo cambiare la Working directory.
@@ -62,8 +62,8 @@ Negli esempi sopra è stato passato un **parametro** al comando cd
 :::
 ### $ mkdir & $ touch
 ``` sh
-$ mkdir <name> # Crea una cartella all'interno della Working directory
-$ touch <name> # Crea un file vuoto nella Working directory
+mkdir <name> # Crea una cartella all'interno della Working directory
+touch <name> # Crea un file vuoto nella Working directory
 ```
 
 ### Filesystem: esercitazione

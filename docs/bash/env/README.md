@@ -12,8 +12,8 @@ L'envinronment può essere configurato in tutto per tutto, permettendoci ad esem
 ## nano & .bash_profile
 nano è un **editor** di testi completamente text based e minimale, non offre molte funzionalità, ma è comodo per scrivere linee di **configurazione** in giro per il File System.
 ```sh
-$ nano ~/.bash_profile # apre il file contenente alcune configurazioni di bash
-$ source ~/.bash_profile # Carica le impostazioni contenute nel .bash_profile senza dover chiudere e riaprire il terminale
+nano ~/.bash_profile # apre il file contenente alcune configurazioni di bash
+source ~/.bash_profile # Carica le impostazioni contenute nel .bash_profile senza dover chiudere e riaprire il terminale
 ```
 > `~` Identifica il path assoluto per accedere alla home dell'utente della sessione bash.
 :::warning
