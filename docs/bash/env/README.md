@@ -36,3 +36,29 @@ echo $USER # Stamperà a video "handgull"
 
 ### Bonus: Pixel-art
 Se può interessare ho fatto delle variabili che messe nel `~/.bash_profile` forniscono delle pixel art, clicca [qui](./pixel-art)!
+
+### Variabili di ambiente
+Bash ci fornisce alcune variabili già valorizzate, come ad esempio `$PS1` o `'$HOME`:
+```sh
+echo $PS1 # Stampa il valore della variabile che si occupa della shell prompt
+export PS1="$ " # Modifica la shell prompt, CONSIGLIO: da sperimentare da terminale, per modificare solo la sessione corrente
+echo $HOME # Stampa il path assoluto associato alla home dell'utente
+echo $PATH # Stampa la lista di tutti i PATH degli eseguibili.
+env # Stampa a video ogni variabile d'ambiente, con il valore associato
+```
+
+![bash-screenshots-08](../assets/bash-screenshots-08.png)
+
+> Anche in questo screen si può notare come $PS1 sia stata modificata di valore, portando ad una modifica della shell prompt<br>
+> Come potete vedere evidenziato in **rosso** è anche presente il path `/bin`, proviamo a non sottointenderlo:
+```sh
+/bin/pwd # Lancia il comando pwd specificando il path assoluto, che è implicito grazie a $PATH
+```
+```sh
+# ~/.bash_profile
+export PATH=<nuovo_path_assoluto>:$PATH # Aggiunge un path ai PATH degli eseguibili accessibili direttamente da Bash
+# NOTA: il carattere : separa i path gli uni dagli altri
+```
+::: tip
+Questo è utile quando ad esempio vi è un eseguibile con path `/directory/eseguibile` e si vuole rendere l'eseguibile **accessibile** da qualunque path specificandone solo il nome (in questo caso "eseguibile")
+:::

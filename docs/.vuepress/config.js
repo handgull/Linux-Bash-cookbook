@@ -38,7 +38,8 @@ function getBashSidebar (groupA) {
         '',
         './fs-manipulation/',
         './redirection/',
-        './env/'
+        './env/',
+        './scripting/'
       ]
     }
   ]
